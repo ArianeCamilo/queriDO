@@ -14,6 +14,7 @@ $marcados = 'content/marcado'; 	// destino!
 
 $givenName_rgx = file_get_contents("$basedir/data/nomes-proprios.rgx.txt");
 $gnRegex = '#(?<=[\s>])(?:'.$givenName_rgx.')(?=[\s<])#us'; // case sensitive!
+$gnRegex2 = '#<b>(?:'.$givenName_rgx.')\s[^<]+</b>#ius'; // only for bolds
 
 foreach (scandir("$basedir/$filtrados") as $f) if (substr($f,-5,5)=='.html') {
 	echo "\n- $f";
@@ -26,6 +27,7 @@ foreach (scandir("$basedir/$filtrados") as $f) if (substr($f,-5,5)=='.html') {
 function mark($file) {
 	global $useGivenName;
 	global $gnRegex;
+	global $gnRegex2;
 
 	$clean = file_get_contents($file);
 
@@ -41,6 +43,13 @@ function mark($file) {
 		'<mark class="givenName">$0</mark>',
 		$clean
 	);  // internamente a regex é pre-compilada por cache, https://bugs.php.net/bug.php?id=32470
+
+	if ($useGivenName) // case-insensitiveness only for bolds:
+		$clean = preg_replace(
+			$gnRegex2,
+			'<b class="givenName">$0</b>',
+			$clean
+		);
 
 
 	// homologados

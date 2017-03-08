@@ -14,7 +14,7 @@ $marcados = 'content/marcado'; 	// destino!
 
 $givenName_rgx = file_get_contents("$basedir/data/nomes-proprios.rgx.txt");
 $gnRegex = '#(?<=[\s>])(?:'.$givenName_rgx.')(?=[\s<])#us'; // case sensitive!
-$gnRegex2 = '#<b>(?:'.$givenName_rgx.')\s[^<]+</b>#ius'; // only for bolds
+$gnRegex2 = '#<b>(\s*(?:'.$givenName_rgx.')\s[^<]+?)</b>#ius'; // only for bolds
 
 foreach (scandir("$basedir/$filtrados") as $f) if (substr($f,-5,5)=='.html') {
 	echo "\n- $f";
@@ -47,7 +47,7 @@ function mark($file) {
 	if ($useGivenName) // case-insensitiveness only for bolds:
 		$clean = preg_replace(
 			$gnRegex2,
-			'<b class="givenName">$0</b>',
+			'<b class="givenName">$1</b>',
 			$clean
 		);
 

@@ -4,15 +4,16 @@
  */
 
 ini_set("default_charset", 'utf-8');
-$useGivenName = false;
+$useGivenName = true;
 $basedir = dirname(__DIR__);  //  clone root
 
 // $dirTree = 'data/do-info'; 		// csv
 // $originais = 'content/original'; 	// html original com UTF8 homologado
 $filtrados = 'content/filtrado'; 	// html limpo
 $marcados = 'content/marcado'; 	// destino!
+
 $givenName_rgx = file_get_contents("$basedir/data/nomes-proprios.rgx.txt");
-$gnRegex = '#(?<=[\s>])(?:'.$givenName_rgx.')(?=[\s<])#uis'; // ideal is compile first!
+$gnRegex = '#(?<=[\s>])(?:'.$givenName_rgx.')(?=[\s<])#us'; // case sensitive!
 
 foreach (scandir("$basedir/$filtrados") as $f) if (substr($f,-5,5)=='.html') {
 	echo "\n- $f";
@@ -23,6 +24,9 @@ foreach (scandir("$basedir/$filtrados") as $f) if (substr($f,-5,5)=='.html') {
 // // // // // // // // //
 
 function mark($file) {
+	global $useGivenName;
+	global $gnRegex;
+
 	$clean = file_get_contents($file);
 
 	// especifico da curadoria:

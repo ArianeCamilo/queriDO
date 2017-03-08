@@ -4,13 +4,15 @@
  */
 
 ini_set("default_charset", 'utf-8');
-
+$useGivenName = false;
 $basedir = dirname(__DIR__);  //  clone root
 
 // $dirTree = 'data/do-info'; 		// csv
 // $originais = 'content/original'; 	// html original com UTF8 homologado
 $filtrados = 'content/filtrado'; 	// html limpo
 $marcados = 'content/marcado'; 	// destino!
+$givenName_rgx = file_get_contents("$basedir/data/nomes-proprios.rgx.txt");
+$gnRegex = '#(?<=[\s>])(?:'.$givenName_rgx.')(?=[\s<])#uis'; // ideal is compile first!
 
 foreach (scandir("$basedir/$filtrados") as $f) if (substr($f,-5,5)=='.html') {
 	echo "\n- $f";
@@ -29,6 +31,13 @@ function mark($file) {
 		'<mark class="organization_name">$0</mark>',
 		$clean
 	);
+
+	if ($useGivenName) $clean = preg_replace(
+		$gnRegex,
+		'<mark class="givenName">$0</mark>',
+		$clean
+	);  // internamente a regex é pre-compilada por cache, https://bugs.php.net/bug.php?id=32470
+
 
 	// homologados
 	$clean = preg_replace('#(?:CNPJ[\s:\-\.]*)?\d\d\.\d\d\d\.\d\d\d/\d\d\d\d\-\d\d#uis', '<data class="urn-org-vatID">$0</data>', $clean);

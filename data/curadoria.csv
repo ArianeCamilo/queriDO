@@ -1,2 +1,5 @@
 id,nome,alvo_tema,alvo_diariosOficiais,data_inicio
 1,Desabamento da ciclovia Tim Maia,"Custos e responsabilidades pela construção da ciclovia Tim Maia, que desabou em abril de 2016",DOM do Rio de Janeiro,2016-07-31
+2,Gastos Abertos de Recife,"Cruzamento de dados recentes (2015 e 2016) dos gastos da prefeitura de Recife, levantados pelos voluntários do projeto Gastos Abertos. Espera-se obter recursos para a navegação do ""gasto ao DO"" e ""do DO ao gasto"", demonstrando o potencial de ambas as ferramentas.",DOM de Recife,
+3,Avaliação por conciliação das fontes do DOM-SP,"Auditoria por amostragem da consistência e confiabilidade das fontes do Diário Livre, por métodos de conciliação do TXT do PDF com o TXT das fontes em uso.",DOM de Sâo Paulo,
+4,Avaliação dos padrões da Concremat no município de SP,Aproveitando dados e conclusões da curadoria-1 para avaliar padrões de comportamento dos contratos envolvendo a mesma empresa (Concremat) no municiípio de São Paulo.,DOM de Sâo Paulo,

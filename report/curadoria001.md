@@ -23,6 +23,8 @@ layout: page
 
 ## Origem e motivações do projeto
 
+![](assets/curadoria001-desabamento.png)
+
 O [acidente da ciclovia Tim Maia, obra da Concremat](http://brasil.elpais.com/brasil/2016/04/21/politica/1461256688_847248.html), fez com que um grupo de amigos passasse a noite tentando extrair do diário oficial da cidade do Rio informações sobre os contratos do município com a empreiteira. A tarefa hercúlea nos alertou para o quão valioso seria um script capaz de extrair sistematicamente informações do diário e torná-las verdadeiramente abertas. As possibilidades a partir daí seriam inúmeras. Em excel, gráfico, verso e prosa.
 
 O Diário Oficial é como um blog, importantíssimo, mas que poucos leem.

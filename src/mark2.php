@@ -16,14 +16,17 @@ $marcados = 'content/marcado'; 	// destino!
 // BEGIN:PREPARE proper name regexes: 
 //   (see http://www.regular-expressions.info/unicode.html )
 
- $givenName_rgx = file_get_contents("$basedir/data/nomes-proprios.rgx.txt");
+ $givenName_rgx = file_get_contents("$basedir/data/nomes-proprios.rgx.txt"); // rm Santa, add Carlos, Ivan, etc. base TSE
 
  $gnRegex = '#(?<=[\s>])(?:'.$givenName_rgx.')\s+(?:(?:\p{Lu}\p{Ll}+|d[oa]s?|de[lr]?|dal|e|van)\s+){0,8}(?:\p{Lu}\p{Ll}+)(?=[,;\.\(\)\[\]\s<])#us'; 
    // full name in free context, case sensitive.
 
- $gnRegex2 = '#<b>(\s*(?:'.$givenName_rgx.')\s[^<]+?)</b>#ius';  // clue for something into the bolds
- $gnRegex3 = '#(\s*)((?:'.$givenName_rgx.')\s+[^,;<]+)#ius';     // full name in bold context. Use \p{L}
+ $gnRegex2 = '#<b>((?:[^<]*?|\s+)?(?:'.$givenName_rgx.')\s[^<]+?)</b>#ius';  // clue for something into the bolds...
+ $gnRegex3 = '#(?<=[\s>,;]|^)(?:'.$givenName_rgx.')(?:\s+\p{L}+){0,8}\s+\p{L}+#ius';  // full name in bold context.
 // END:PREPARE
+
+
+
 
 /* LEMBRETE: topônimos e cia, no parsing de segunda ordem,
      "Instituto <mark class="givenName">Fulano</mark>, rua <mark class="givenName">Ciclano</mark>".
@@ -66,7 +69,7 @@ function mark($file) {
 			$gnRegex2,
 		        function ($matches) {
 			    global $gnRegex3;
-		            return preg_replace($gnRegex3, '$1<mark class="givenName">$2</mark>', $matches[0]);
+		            return preg_replace($gnRegex3, '<mark class="givenName">$0</mark>', $matches[0]);
         		},
 			$clean
 		);

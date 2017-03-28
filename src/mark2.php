@@ -12,9 +12,27 @@ $basedir = dirname(__DIR__);  //  clone root
 $filtrados = 'content/filtrado'; 	// html limpo
 $marcados = 'content/marcado'; 	// destino!
 
-$givenName_rgx = file_get_contents("$basedir/data/nomes-proprios.rgx.txt");
-$gnRegex = '#(?<=[\s>])(?:'.$givenName_rgx.')(?=[\s<])#us'; // case sensitive!
-$gnRegex2 = '#<b>(\s*(?:'.$givenName_rgx.')\s[^<]+?)</b>#ius'; // only for bolds
+
+// BEGIN:PREPARE proper name regexes: 
+//   (see http://www.regular-expressions.info/unicode.html )
+
+ $givenName_rgx = file_get_contents("$basedir/data/nomes-proprios.rgx.txt");
+
+ $gnRegex = '#(?<=[\s>])(?:'.$givenName_rgx.')\s+(?:(?:\p{Lu}\p{Ll}+|d[oa]s?|de[lr]?|dal|e|van)\s+){0,8}(?:\p{Lu}\p{Ll}+)(?=[,;\.\(\)\[\]\s<])#us'; 
+   // full name in free context, case sensitive.
+
+ $gnRegex2 = '#<b>(\s*(?:'.$givenName_rgx.')\s[^<]+?)</b>#ius';  // clue for something into the bolds
+ $gnRegex3 = '#(\s*)((?:'.$givenName_rgx.')\s+[^,;<]+)#ius';     // full name in bold context. Use \p{L}
+// END:PREPARE
+
+/* LEMBRETE: topônimos e cia, no parsing de segunda ordem,
+     "Instituto <mark class="givenName">Fulano</mark>, rua <mark class="givenName">Ciclano</mark>".
+     envelopar como Place ou NamedEntity
+     <span class="NamedEntity" data-type="instituto">Instituto <mark class="givenName">Fulano</mark></span>,
+     <span class="Place" data-type="via">rua <mark class="givenName">Ciclano</mark></span>.
+     <span class="Place" data-type="via">avenida Marginal</span>.
+*/
+
 
 foreach (scandir("$basedir/$filtrados") as $f) if (substr($f,-5,5)=='.html') {
 	echo "\n- $f";
@@ -38,18 +56,22 @@ function mark($file) {
 		$clean
 	);
 
-	if ($useGivenName) $clean = preg_replace(
-		$gnRegex,
-		'<mark class="givenName">$0</mark>',
-		$clean
-	);  // internamente a regex é pre-compilada por cache, https://bugs.php.net/bug.php?id=32470
-
-	if ($useGivenName) // case-insensitiveness only for bolds:
+	if ($useGivenName) {
 		$clean = preg_replace(
-			$gnRegex2,
-			'<b class="givenName">$1</b>',
+			$gnRegex,
+			'<mark class="givenName">$0</mark>',
 			$clean
 		);
+		$clean = preg_replace_callback(   // case-insensitiveness only for bolds:
+			$gnRegex2,
+		        function ($matches) {
+			    global $gnRegex3;
+		            return preg_replace($gnRegex3, '$1<mark class="givenName">$2</mark>', $matches[0]);
+        		},
+			$clean
+		);
+		// NOTA: nao requer regex-cache conforme https://bugs.php.net/bug.php?id=32470
+	}
 
 
 	// homologados

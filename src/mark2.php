@@ -76,19 +76,59 @@ function mark($file) {
 		// NOTA: nao requer regex-cache conforme https://bugs.php.net/bug.php?id=32470
 	}
 
+	// // // //
+	// quase homologados, marcações atômicas, de primeira ordem:
 
-	// homologados
 	$clean = preg_replace('#(?:CNPJ[\s:\-\.]*)?\d\d\.\d\d\d\.\d\d\d/\d\d\d\d\-\d\d#uis', '<data class="urn-org-vatID">$0</data>', $clean);
-	$clean = preg_replace('#Artigo\s+[\d\.]+\sInciso\s+.+?\s+da\s+Lei\s+n?º?\s*\d[\d\.]+\d[/\s]+\d\d\d\d#uis', '<cite class="urn-lex">$0</cite>', $clean);
-	$clean = preg_replace('#Artigo\s+[\d\.]+\sda\s+Lei\s+n?º?\s*\d[\d\.]+\d[/\s]+\d\d\d\d#uis', '<cite class="urn-lex">$0</cite>', $clean);
-	$clean = preg_replace('#(?:Lei|Descreto\s+Lei|Decreto|Portaria)\s+n?º?\s*\d[\d\.]+\d[/\s]+\d\d(\d\d)?#uis', '<cite class="urn-lex">$0</cite>', $clean);
+
+	//(nao usar .+) $n1 = 0; $clean = preg_replace('#Artigo\s+[\d\.]+\sInciso\s+.+?\s+da\s+Lei\s+n?º?\s*\d[\d\.]+\d[/\s]+\d\d\d\d#uis', 
+	//	'<cite class="urn-lex">$0</cite>', $clean, -1, $n1);
+	$n = 0; $clean = preg_replace(
+		'#Artigo\s+[\d\.]+\sda\s+Lei\s+n?º?\s*\d[\d\.]+\d[/\s]+\d\d\d\d#uis', 
+		'<cite class="urn-lex">$0</cite>', $clean,-1, $n
+	);
+	if (!$n) $clean = preg_replace(
+		'#(?:Lei|Descreto\s+Lei|Decreto|Portaria)\s+n?º?\s*\d[\d\.]+\d[/\s]+\d\d(\d\d)?#uis', 
+		'<cite class="urn-lex">$0</cite>', 
+		$clean
+	  );
 
 	$clean = preg_replace('#Contrato\s+(?:N\.?º?\s*)?\d[\d\-\./]+(/\d\d\d\d)?#uis', '<cite class="urn-cntrt">$0</cite>', $clean);
-	$clean = preg_replace('#Processo(?:\s+INSTRUTIVO|\s+administrativo)?\s*(?:N\.?º?\s*|:\s*)?\d[\d\-\./]+#uis', '<cite class="urn-gov-proc">$0</cite>', $clean);
-	$clean = preg_replace('#matr(?:\.|[ií]cula)\s+(?:N\.?º?\s*)?\d[\d\-\./]+#uis', '<cite class="urn-gov-profreg">$0</cite>', $clean); // ProfessionalService Registration ID
+	$clean = preg_replace(
+	  '#Processo(?:\s+INSTRUTIVO|\s+administrativo)?\s*(?:N\.?º?\s*|:\s*)?\d[\d\-\./]+#uis', 
+	  '<cite class="urn-gov-proc">$0</cite>',
+	  $clean
+	);
+	$clean = preg_replace(
+	  '#matr(?:\.|[ií]cula)\s+(?:N\.?º?\s*)?\d[\d\-\./]+#uis', 
+	  '<cite class="urn-gov-profreg">$0</cite>', 
+	  $clean
+	); // ProfessionalService Registration ID
 
-	$clean = preg_replace('#(?:\s*<[ubi]>\s*)*Valor(?:\s*</[ubi]>\s*)*[\s:]*(de\s)?R\$\s*\d[\d\,\.]+#uis', '<data class="currencyValue">$0</data>', $clean); // itemtype="http://schema.org/MonetaryAmount"
-	$clean = preg_replace('#\d\d?\s+de\s+(?:janeiro|fevereiro|mar[çc]o|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro)\s+de\s+\d\d\d\d#uis', '<time class="date">$0</time>', $clean);
+
+	// Restringindo (flag $n) estilo do documento para evitar vazamentos da regex:
+	$n = 0;
+	$clean = preg_replace(
+		'#(?:\s*<[ubi]>\s*)(?:\s*<[ubi]>\s*)Valor(?:\s*</[ubi]>\s*)(?:\s*</[ubi]>\s*)[\s:]*(de\s)?R\$\s*\d[\d\,\.]+#uis', 
+		'<data class="currencyValue">$0</data>',
+		$clean,
+		-1,
+		$n
+	);
+	if (!$n)
+		$clean = preg_replace('#(?:\s*<[ubi]>\s*)Valor(?:\s*</[ubi]>\s*)[\s:]*(de\s)?R\$\s*\d[\d\,\.]+#uis',
+			'<data class="currencyValue">$0</data>', $clean,-1,$n);
+	if (!$n)
+		$clean = preg_replace('#Valor[\s:]*(de\s)?R\$\s*\d[\d\,\.]+#uis',
+			'<data class="currencyValue">$0</data>', $clean,-1,$n);
+	if (!$n)
+		$clean = preg_replace('#R\$\s*\d[\d\,\.]+#uis', '<data class="currencyValue">$0</data>', $clean);
+
+	$clean = preg_replace(
+	  '#\d\d?\s+de\s+(?:janeiro|fevereiro|mar[çc]o|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro)\s+de\s+\d\d\d\d#uis', 
+	  '<time class="date">$0</time>',
+	  $clean
+	);
 
 	// sem efeito (e ainda não-testados)
 	$clean = preg_replace('#(?:CPF[\s:\.]*)?\d\d\d\.\d\d\d\.\d\d\d\-\d\d\d#uis', '<data class="urn-person-vatID">$0</data>', $clean);

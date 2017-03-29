@@ -1,9 +1,9 @@
 ---
 title: Apresentação da Curadoria 001
-version: 0.1
-version_status: REVISION
-endorsed_n: 0
-endorsed_status: waiting
+version: 1.0
+version_status: PRODUCTION
+endorsed_n: 2
+endorsed_status: approved
 layout: page
 ---
 
@@ -42,5 +42,6 @@ Foram pesquisadas todas as edições do Diário Oficial do Município (DOM) do R
 
 Além dos [revisores listados no histórico desta página](https://github.com/okfn-brasil/queriDO/commits/master/report/curadoria001.md), curdores que endossam o seu conteúdo:
 
-* Bruna Santos 
+* Bruna Santos
+* Marco Zanchi
 * Você curador: edite o arquivo para acrescentar **seu nome aqui**, precisamos no mínimo 2 curadores **endossando** (atestando que concorda com todo o contedo acima) para iniciar o processo.

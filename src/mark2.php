@@ -36,6 +36,9 @@ $marcados = 'content/marcado'; 	// destino!
  }
 // END:PREPARE
 
+// see also (vocativos) at http://www.casacivil.pr.gov.br/modules/conteudo/conteudo.php?conteudo=9
+$honorificPrefix_rgx = 'acad[eê]mico|administrador|advogado|almirante|aluno|apost[oó]lico|ap[óo]stolo|arcebispo|Arquiteto|bacharela?|Bibliotec[aá]ri[ao]|bispo|cadete|capitão|cardeal|comandante|cirurgi[aã]o?\-dentista|cirurgi[aã]o?|comendador|cônego|conselheiro|contador|contra\-almirante|coronel|deputad[oa]|desembargadora?|di[áa]cono|Dign[íi]ssimo|Dom|Dona|doutora?|embaixadora?|Emin[êe]ncia|Eminentíssimo|enfermeiro|engenheir[oa]|enviado\s+extraordinário|plenipotenciário|Estado\-Maior|Excelentíssim[oa]|Excelência|general|ilustríssim[oa]|madame|mademoiselle|major|major\-brigadeiro|marechal|médico|Meritíssimo|mestr[ea]|mister|monsenhor|monsieur|Muit?o?\s+Digno|padre|pároco|pastora?|Philosophiae\s+Doctor|prefeito|presbítero|presidente|procurador|professora?|Profa?\.|promotora?|rei|Reverendíssim[ao]|Reverendo Padre|Reverendo|sacerdote|Santo Padre|sargento|sargento\-ajudante|secretári[oa]|senador|senhora?|sra?\.|senhorita|Sua\s+(?:Alteza\sReal|Alteza|Eminência|Excelência|Excelência\sReverendíssima|Majestade|Reverência|Reverendíssima|Santidade|Senhoria)|tenente\-coronel|tenente|tesoureiro|testemunha|vereador|veterinário|vice\-(?:almirante|presidente)|vig[aá]rio|viscondessa|visconde|Vossa\s(?:Alteza|Excelência|Eminência|Magnific[eê]ncia|Majestade|Senhoria)';
+$stopName_rgx = 'Avenida|Aeroporto|Área|Alameda|Campo|Comunidade|Condom[ií]nio|Ch[aá]cara|Distrito|Esta[çc][aã]o|Estrada|Pra[çc]a|Passeio|Rua|Travessa|Hospital|Funda[çc][aã]o|Monumento|Rodovia|T[úu]nel|Viaduto';
 
 
 /* LEMBRETE: topônimos e cia, no parsing de segunda ordem,
@@ -70,6 +73,8 @@ function mark($file) {
 	global $gnRegex2;
 	global $ridx;
 	global $oldmarks;
+	global $honorificPrefix_rgx;
+	global $stopName_rgx;
 
 	$clean = file_get_contents($file);
 
@@ -82,6 +87,12 @@ function mark($file) {
 
 	if ($useGivenName) {
 	  $oldmarks = [];
+          $clean = preg_replace( // avoid toponimes
+                '#(?<=[\s>])(?:'. $stopName_rgx .')(?=[,;\.\(\)\[\]\s<])#usi',
+                '=stopName=$0=',
+                $clean
+          );
+
 	  /*
 	  $clean = preg_replace_callback(   // (REDUNDANT NO EFECT HERE) remove and count marks
                 '#<mark class="givenName">([^<]+)</mark>#s',
@@ -114,11 +125,23 @@ function mark($file) {
 		);
 
 	  } // for
+
+          $clean = preg_replace( // add prefixes
+                "/($honorificPrefix_rgx)\s+(_#gname_(\d+)#_)/usi",
+                '<span class="honorificPrefix">$1</span> $2',
+                $clean
+          );
+
           $clean = preg_replace_callback( // give back the oldmarks
-                '/_#gname_(\d+)#_/',
+                '/_#gname_(\d+)#_/ius',
                 function ($m) {global $oldmarks; $nome=$oldmarks[$m[1]]; return "<mark class=\"givenName\">$nome</mark>";},
                 $clean
           );
+
+          $clean = preg_replace( // give back stops
+                "/=stopName=([^=]+)=/usi", '$1', $clean
+          );
+
 	} // if
 
 

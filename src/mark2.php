@@ -13,18 +13,28 @@ $filtrados = 'content/filtrado'; 	// html limpo
 $marcados = 'content/marcado'; 	// destino!
 
 
-// BEGIN:PREPARE proper name regexes: 
+// BEGIN:PREPARE proper name regexes:
 //   (see http://www.regular-expressions.info/unicode.html )
-
- $givenName_rgx = file_get_contents("$basedir/data/nomes-proprios.rgx.txt"); // rm Santa, add Carlos, Ivan, etc. base TSE
-
- $gnRegex = '#(?<=[\s>])(?:'.$givenName_rgx.')\s+(?:(?:\p{Lu}\p{Ll}+|d[oa]s?|de[lr]?|dal|e|van)\s+){0,8}(?:\p{Lu}\p{Ll}+)(?=[,;\.\(\)\[\]\s<])#us'; 
-   // full name in free context, case sensitive.
-
- $gnRegex2 = '#<b>((?:[^<]*?|\s+)?(?:'.$givenName_rgx.')\s[^<]+?)</b>#ius';  // clue for something into the bolds...
- $gnRegex3 = '#(?<=[\s>,;]|^)(?:'.$givenName_rgx.')(?:\s+\p{L}+){0,8}\s+\p{L}+#ius';  // full name in bold context.
+//   NOTE1: no need of regex-cache, as https://bugs.php.net/bug.php?id=32470
+ $ridx = 0;
+ $givenName_rgx =[];
+ $gnRegexAgg =[];
+ $gnRegex =[];
+ $gnRegex2 =[];
+ $gnRegex3 =[];
+ $oldmakrs = NULL;
+ foreach (glob("$basedir/data/cache/nomes-proprios-final*.rgx.txt") as $f) {
+   //   NOTE2: need of multi-regex, to avoid  “Regular Expression is too large” error.
+   echo "\n... using $f";
+   $givenName_rgx[$ridx] = file_get_contents($f);
+   $gnRegexAgg[$ridx] = '/(?<=[\s>])('. $givenName_rgx[$ridx] .')\s+_#gname_(\d+)#_/usi';
+   $gnRegex[$ridx]    = '#(?<=[\s>])(?:'. $givenName_rgx[$ridx] .')\s+(?:(?:\p{Lu}\p{Ll}+|d[oa]s?|de[lr]?|dal|e|van)\s+){0,8}(?:\p{Lu}\p{Ll}+)(?=[,;\.\(\)\[\]\s<])#us'; 
+    // full name in free context, case sensitive.
+   $gnRegex2[$ridx] = '#<b>((?:[^<]*?|\s+)?(?:'. $givenName_rgx[$ridx] .')\s[^<]+?)</b>#ius';  // clue for something into the bolds...
+   $gnRegex3[$ridx] = '#(?<=[\s>,;]|^)(?:'. $givenName_rgx[$ridx ].')(?:\s+\p{L}+){0,8}\s+\p{L}+#ius';  // full name in bold context.
+   $ridx++;
+ }
 // END:PREPARE
-
 
 
 
@@ -45,10 +55,21 @@ foreach (scandir("$basedir/$filtrados") as $f) if (substr($f,-5,5)=='.html') {
 
 // // // // // // // // //
 
+function oldmark_enfold0($m) {
+        global $oldmarks;
+        $oldmarks[] =$m[0]; // or 1
+        $n = count($oldmarks)-1;
+       return "_#gname_$n#_";
+}
+
+
 function mark($file) {
 	global $useGivenName;
+        global $gnRegexAgg;
 	global $gnRegex;
 	global $gnRegex2;
+	global $ridx;
+	global $oldmarks;
 
 	$clean = file_get_contents($file);
 
@@ -60,21 +81,46 @@ function mark($file) {
 	);
 
 	if ($useGivenName) {
-		$clean = preg_replace(
-			$gnRegex,
-			'<mark class="givenName">$0</mark>',
-			$clean
+	  $oldmarks = [];
+	  /*
+	  $clean = preg_replace_callback(   // (REDUNDANT NO EFECT HERE) remove and count marks
+                '#<mark class="givenName">([^<]+)</mark>#s',
+		'oldmark_enfold',
+                $clean
+          );
+	  */
+	  for($i=0;$i<$ridx; $i++) {  // each block of proper-name-regexes
+
+                $clean = preg_replace_callback(   // aggregates firstname to oldmark.
+                        $gnRegexAgg[$i],
+                        function ($m) {
+				global $oldmarks;
+				$oldmarks[] ="$m[1] ".$oldmarks[$m[2]];
+                            	$n = count($oldmarks)-1;
+                            	return "_#gname_$n#_";
+			},
+                        $clean
+                );
+		$clean = preg_replace_callback(   // marca em texto livre.
+			$gnRegex[$i], 'oldmark_enfold0', $clean
 		);
 		$clean = preg_replace_callback(   // case-insensitiveness only for bolds:
-			$gnRegex2,
-		        function ($matches) {
+			$gnRegex2[$i],
+		        function ($matches) use ($i) {
 			    global $gnRegex3;
-		            return preg_replace($gnRegex3, '<mark class="givenName">$0</mark>', $matches[0]);
+		            return preg_replace_callback($gnRegex3[$i], 'oldmark_enfold0', $matches[0]);
         		},
 			$clean
 		);
-		// NOTA: nao requer regex-cache conforme https://bugs.php.net/bug.php?id=32470
-	}
+
+	  } // for
+          $clean = preg_replace_callback( // give back the oldmarks
+                '/_#gname_(\d+)#_/',
+                function ($m) {global $oldmarks; $nome=$oldmarks[$m[1]]; return "<mark class=\"givenName\">$nome</mark>";},
+                $clean
+          );
+	} // if
+
 
 	// // // //
 	// quase homologados, marcações atômicas, de primeira ordem:

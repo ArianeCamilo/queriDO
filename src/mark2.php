@@ -169,7 +169,7 @@ function mark($file) {
 	  $clean
 	);
 	$clean = preg_replace(
-	  '#matr(?:\.|[ií]cula)\s+(?:N\.?º?\s*)?\d[\d\-\./]+#uis', 
+	  '#matr(?:\.|[ií]cula)\s*(?:N\.?º?\s*)?\d[\d\-\./]+#uis', 
 	  '<cite class="urn-gov-profreg">$0</cite>', 
 	  $clean
 	); // ProfessionalService Registration ID

@@ -32,8 +32,7 @@ function superClen($file) {
 		, "<meta itemprop='datePublished' content='$meta[datePublished]'/>"
 		, "<meta itemprop='datePublished-pubid' content='{$meta['datePublished-pubid']}'/>"
 	])."\n</head>";
-	return ["<html>$METAchar\n$clean</html>", $meta]; //old
-	//new return ["<html>\n$head\n$clean\n</html>\n", $meta];
+	return ["<html>\n$head\n$clean\n</html>\n", $meta];
 }
 
 function x2dom($xml) {

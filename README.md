@@ -49,6 +49,16 @@ Os termos coloridos são justamente os elementos marcados: definem em contexto a
 ## Documentação do projeto
 Ver [pasta `docs`](docs/README.md).
 
+## Projetos relacionados
+
+* Para **identificação unívoca e transparente** de separatas das matérias dos diários oficiais: [buscas LexML](http://lexml.gov.br/), [normas LexML](http://projeto.lexml.gov.br/), generalização das [URNs LEX](https://en.wikipedia.org/wiki/Lex_(URN)).
+
+* Para **tramento dos PDFs oficiais e prova** de que "PDF melhorado" é equivalente ao oficial. Ver [okfn-brasil/poppler](https://github.com/okfn-brasil/poppler) e [curadoria-003](report/curadoria003.md).
+
+* [Projeto TrazDia](https://github.com/okfn-brasil/trazdia): módulo de busca e recuperação dos originais. 
+
+* [repositórios Datasets-br](https://github.com/datasets-br): para dados complementares, tais como IDs (CPF e CNPJ) das pessoas físicas e jurídicas, oferecidos pelo [public-person](https://github.com/datasets-br/public-person).
+
 ------
 
 ## Licensas livres

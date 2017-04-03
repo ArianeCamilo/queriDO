@@ -1,0 +1,7 @@
+site_name: Documentação do Projeto QueriDO
+pages:
+    - Home: index.md
+    - About: abouTeste.md
+    - Curadoria-1: report/curadoria001.md
+    - Curadoria-3: report/curadoria003.md
+

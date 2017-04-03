@@ -1,0 +1,104 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#welcome-to-mkdocs", 
+            "text": "For full documentation visit  mkdocs.org .", 
+            "title": "Welcome to MkDocs"
+        }, 
+        {
+            "location": "/#commands", 
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
+            "title": "Commands"
+        }, 
+        {
+            "location": "/#project-layout", 
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Project layout"
+        }, 
+        {
+            "location": "/abouTeste/", 
+            "text": "Isdem nostra versata se videre cantus ubi\n\n\nNullis coniugium exspes\n\n\nLorem markdownum templa illam \ncanis\n aperti Troiae? Iam gens capitum\ncertaminis virgo nefandas ocius est caedis Hyanteo destinat nec dum nec\nharenosae fugit. Est cornu materiam, per \nredit\n saevis.\n\n\n\n\nActa per\n\n\nIuvenis meque tenent\n\n\nHeres a aeris Iovem in hunc spernimus\n\n\nGesserat conplexus celebratior patruo sed carceris\n\n\n\n\nConprensus alto modo, est quodque Ulixes fuit vulnera nostris ulterius signata\narmos levius cortice: Tenedon. Suum nutanti foedus, alto quibus nec mea\nbifidosque nobis; parmam.\n\n\nUltima senatum haec quaecumque\n\n\nQuae dolore, tum minus \nruit alto motu\n adeo in undis adhuc Myrmidonasque\ndixere! Capillis solitus Talibus velatae, inobrutus scylla volumine corpora;\ncoloni sublimia naides. E antri, daturum inquit; cultosque lacertos quodque, deo\net Deionidenque turba restabas limina. Sic ver proditus ferat, se silet corpore\ncrines cernere inponere iuxta dilectos indoluit te terga aequora.\n\n\n\n\nVocando viae cancer illa uterum casus Peneia\n\n\nClytumque fixo hostilia satis fortuna\n\n\nCanis Nam monitis effugit alae\n\n\nEst animo\n\n\nIlle genuit misit decipit quam puer\n\n\nSub in eripe quantusque ipse patebant\n\n\n\n\nIlli manes exsistere neque bimembres palude, vidisse umeri ambitiosus gratissima\nindurat duobus? Ferar taedia herba solum hasta sparsos quae inpleat erat saeva\natque. Utrum creverat nivea cum icto patris iovis, haec redit ad oculos\niterumque tergo, his? Natos enim Erycis quoniam?\n\n\nTibi quis \nconabar\n; cetera potiorque terga dat simul carinas\naudacia \npugnae caeloque\n illa vana in amplectens debes.\nFlectitur nosces ventisque aere, una utroque vidit; lecti nutu rerum obductos\nparitura humi \nsit denique inde\n. Et est successor dempserat nisi.\n\nQuam\n circulus, meus Pandion retia\nstellatus inmemor, veni ad ulciscor sentit; ipsum belli dignissime si munera.\n\n\nVersavitque sua gravem cornibus si terga gramina aquas tum, qui securior est.\nIsto non o diffugiunt domum Helicona hinc sistere, os deo studii persequar\nignotas, dixit, condit. Latices mille incomitata nutu: mox est, everterit \nvox\nsum\n. Pectore saepe nebulasque dant; vero bella ficta; mox suam Liber Hesperiae\nad dixit: fratrem urbes. In triste hospitium sorores superosque in Medusa\nadditur infamia Dardaniam intremuit\n\ninmissos\n.", 
+            "title": "About"
+        }, 
+        {
+            "location": "/abouTeste/#isdem-nostra-versata-se-videre-cantus-ubi", 
+            "text": "", 
+            "title": "Isdem nostra versata se videre cantus ubi"
+        }, 
+        {
+            "location": "/abouTeste/#nullis-coniugium-exspes", 
+            "text": "Lorem markdownum templa illam  canis  aperti Troiae? Iam gens capitum\ncertaminis virgo nefandas ocius est caedis Hyanteo destinat nec dum nec\nharenosae fugit. Est cornu materiam, per  redit  saevis.   Acta per  Iuvenis meque tenent  Heres a aeris Iovem in hunc spernimus  Gesserat conplexus celebratior patruo sed carceris   Conprensus alto modo, est quodque Ulixes fuit vulnera nostris ulterius signata\narmos levius cortice: Tenedon. Suum nutanti foedus, alto quibus nec mea\nbifidosque nobis; parmam.", 
+            "title": "Nullis coniugium exspes"
+        }, 
+        {
+            "location": "/abouTeste/#ultima-senatum-haec-quaecumque", 
+            "text": "Quae dolore, tum minus  ruit alto motu  adeo in undis adhuc Myrmidonasque\ndixere! Capillis solitus Talibus velatae, inobrutus scylla volumine corpora;\ncoloni sublimia naides. E antri, daturum inquit; cultosque lacertos quodque, deo\net Deionidenque turba restabas limina. Sic ver proditus ferat, se silet corpore\ncrines cernere inponere iuxta dilectos indoluit te terga aequora.   Vocando viae cancer illa uterum casus Peneia  Clytumque fixo hostilia satis fortuna  Canis Nam monitis effugit alae  Est animo  Ille genuit misit decipit quam puer  Sub in eripe quantusque ipse patebant   Illi manes exsistere neque bimembres palude, vidisse umeri ambitiosus gratissima\nindurat duobus? Ferar taedia herba solum hasta sparsos quae inpleat erat saeva\natque. Utrum creverat nivea cum icto patris iovis, haec redit ad oculos\niterumque tergo, his? Natos enim Erycis quoniam?  Tibi quis  conabar ; cetera potiorque terga dat simul carinas\naudacia  pugnae caeloque  illa vana in amplectens debes.\nFlectitur nosces ventisque aere, una utroque vidit; lecti nutu rerum obductos\nparitura humi  sit denique inde . Et est successor dempserat nisi. Quam  circulus, meus Pandion retia\nstellatus inmemor, veni ad ulciscor sentit; ipsum belli dignissime si munera.  Versavitque sua gravem cornibus si terga gramina aquas tum, qui securior est.\nIsto non o diffugiunt domum Helicona hinc sistere, os deo studii persequar\nignotas, dixit, condit. Latices mille incomitata nutu: mox est, everterit  vox\nsum . Pectore saepe nebulasque dant; vero bella ficta; mox suam Liber Hesperiae\nad dixit: fratrem urbes. In triste hospitium sorores superosque in Medusa\nadditur infamia Dardaniam intremuit inmissos .", 
+            "title": "Ultima senatum haec quaecumque"
+        }, 
+        {
+            "location": "/report/curadoria001/", 
+            "text": "Curadoria do Desabamento da ciclovia Tim Maia\n\n\nObjetivo\n: levantamento, no DOM do Rio de Janeiro, dos custos e responsabilidades pela constru\u00e7\u00e3o da ciclovia Tim Maia, que desabou em abril de 2016.\n\n\nInicio\n: 2016-07-31\n\n\nCuradores\n\n\n\n\nJo\u00e3o Meirelles (\njoaomeirelles\n)\n\n\nHenrique Lorea (\nhenriquelorea\n)\n\n\nBruna Santos (\nmembro da OKBR\n e \nzeladora da curadoria\n)\n\n\nPeter Krauss (\nppkrauss\n \nmembro da OKBR\n)\n\n\n... estamos aguardando a sua participa\u00e7\u00e3o! \u00a0\n\n\n\n\nOrigem e motiva\u00e7\u00f5es do projeto\n\n\n\n\nO \nacidente da ciclovia Tim Maia, obra da Concremat\n motivou um grupo de amigos a passar a noite em busca de informa\u00e7\u00f5es sobre contratos da empreiteira com a cidade do Rio. O \u00fanico caminho vi\u00e1vel para executar esta tarefa herc\u00falea foi tentar extrair as informa\u00e7\u00f5es do di\u00e1rio oficial da cidade. A tarefa os alertou para o qu\u00e3o valioso seria um script capaz de extrair sistematicamente informa\u00e7\u00f5es do di\u00e1rio oficial da cidade e torn\u00e1-las verdadeiramente abertas. As possibilidades a partir da\u00ed seriam in\u00fameras. Em excel, gr\u00e1fico, verso e prosa.\n\n\nO Di\u00e1rio Oficial \u00e9 como um blog important\u00edssimo  que poucos leem. No fomato e linguagem atuais, o Di\u00e1rio \u00e9 \"aberto\" apenas por alguns usu\u00e1rios descontentes.\nNa tentativa de torn\u00e1-lo aberto e reutiliz\u00e1vel, n\u00e3o s\u00f3 no formato, mas na linguagem, iniciamos uma saga n\u00e3o s\u00f3 de programa\u00e7\u00e3o, mas de idealiza\u00e7\u00e3o desse projeto que chamamos carinhosamente de \n\"nosso querido di\u00e1rio oficial\"\n. A empreitada chamou a aten\u00e7\u00e3o do Govlab em NY,  onde foi realizado um \ncoaching\n, entre agosto e outubro de 2016.\n\n\nEntre agosto e setembro de 2016, Bruna Santos e Henrique Lorea, dois dos amigos que iniciaram a extra\u00e7\u00e3o das informa\u00e7\u00f5es do DO carioca com a \nOKBr\n. Organiza\u00e7\u00e3o da qual Bruna \u00e9 membro. Em um dos encontro para planejamento estrat\u00e9gico em 2016, Peter ficou sabendo, e sugeriu unificar os requisitos do \nQueriDO\n com o \nDi\u00e1rio Livre\n, desenvolvido pelo COLAB-USP e apoiado pela OKBr, criando aqui no \ngit coletivo \nokfn-brasil\n uma iniciativa mais ampla... Partes do c\u00f3digo do Di\u00e1rio Livre,  como o \ntrazdia\n do Andres \u00e9 semelhante ao que vinham desenvolvendo no \nQueriDO\n.\n\n\nNo final de dezembro de 2016, com chegada de um volunt\u00e1rio animado, o Marco, decidimos criar um plano de metas para 2017: \u00e9 o que est\u00e1 resumido na se\u00e7\u00e3o acima dos objetivos. \n\n\nLevantamentos preliminares\n\n\nForam pesquisadas todas as edi\u00e7\u00f5es do Di\u00e1rio Oficial do Munic\u00edpio (DOM) do Rio de Janeiro, e encontradas cita\u00e7\u00f5es da empresa respons\u00e1vel pela constru\u00e7\u00e3o da ciclovia, a \nCONCREMAT, de 2012 a 2016\n. Apenas separatas com alguma cita\u00e7\u00e3o expl\u00edcita foram requisitadas, para primeira an\u00e1lise e triagem.\n\n\nEndossos e revisores desta p\u00e1gina\n\n\nAl\u00e9m dos \nrevisores listados no hist\u00f3rico desta p\u00e1gina\n, curdores que endossam o seu conte\u00fado:\n\n\n\n\nBruna Santos\n\n\nMarco Zanchi\n\n\nVoc\u00ea curador: edite o arquivo para acrescentar \nseu nome aqui\n, precisamos no m\u00ednimo 2 curadores \nendossando\n (atestando que concorda com todo o contedo acima) para iniciar o processo.", 
+            "title": "Curadoria-1"
+        }, 
+        {
+            "location": "/report/curadoria001/#curadoria-do-desabamento-da-ciclovia-tim-maia", 
+            "text": "Objetivo : levantamento, no DOM do Rio de Janeiro, dos custos e responsabilidades pela constru\u00e7\u00e3o da ciclovia Tim Maia, que desabou em abril de 2016.  Inicio : 2016-07-31", 
+            "title": "Curadoria do Desabamento da ciclovia Tim Maia"
+        }, 
+        {
+            "location": "/report/curadoria001/#curadores", 
+            "text": "Jo\u00e3o Meirelles ( joaomeirelles )  Henrique Lorea ( henriquelorea )  Bruna Santos ( membro da OKBR  e  zeladora da curadoria )  Peter Krauss ( ppkrauss   membro da OKBR )  ... estamos aguardando a sua participa\u00e7\u00e3o!", 
+            "title": "Curadores"
+        }, 
+        {
+            "location": "/report/curadoria001/#origem-e-motivacoes-do-projeto", 
+            "text": "O  acidente da ciclovia Tim Maia, obra da Concremat  motivou um grupo de amigos a passar a noite em busca de informa\u00e7\u00f5es sobre contratos da empreiteira com a cidade do Rio. O \u00fanico caminho vi\u00e1vel para executar esta tarefa herc\u00falea foi tentar extrair as informa\u00e7\u00f5es do di\u00e1rio oficial da cidade. A tarefa os alertou para o qu\u00e3o valioso seria um script capaz de extrair sistematicamente informa\u00e7\u00f5es do di\u00e1rio oficial da cidade e torn\u00e1-las verdadeiramente abertas. As possibilidades a partir da\u00ed seriam in\u00fameras. Em excel, gr\u00e1fico, verso e prosa.  O Di\u00e1rio Oficial \u00e9 como um blog important\u00edssimo  que poucos leem. No fomato e linguagem atuais, o Di\u00e1rio \u00e9 \"aberto\" apenas por alguns usu\u00e1rios descontentes.\nNa tentativa de torn\u00e1-lo aberto e reutiliz\u00e1vel, n\u00e3o s\u00f3 no formato, mas na linguagem, iniciamos uma saga n\u00e3o s\u00f3 de programa\u00e7\u00e3o, mas de idealiza\u00e7\u00e3o desse projeto que chamamos carinhosamente de  \"nosso querido di\u00e1rio oficial\" . A empreitada chamou a aten\u00e7\u00e3o do Govlab em NY,  onde foi realizado um  coaching , entre agosto e outubro de 2016.  Entre agosto e setembro de 2016, Bruna Santos e Henrique Lorea, dois dos amigos que iniciaram a extra\u00e7\u00e3o das informa\u00e7\u00f5es do DO carioca com a  OKBr . Organiza\u00e7\u00e3o da qual Bruna \u00e9 membro. Em um dos encontro para planejamento estrat\u00e9gico em 2016, Peter ficou sabendo, e sugeriu unificar os requisitos do  QueriDO  com o  Di\u00e1rio Livre , desenvolvido pelo COLAB-USP e apoiado pela OKBr, criando aqui no  git coletivo  okfn-brasil  uma iniciativa mais ampla... Partes do c\u00f3digo do Di\u00e1rio Livre,  como o  trazdia  do Andres \u00e9 semelhante ao que vinham desenvolvendo no  QueriDO .  No final de dezembro de 2016, com chegada de um volunt\u00e1rio animado, o Marco, decidimos criar um plano de metas para 2017: \u00e9 o que est\u00e1 resumido na se\u00e7\u00e3o acima dos objetivos.", 
+            "title": "Origem e motiva\u00e7\u00f5es do projeto"
+        }, 
+        {
+            "location": "/report/curadoria001/#levantamentos-preliminares", 
+            "text": "Foram pesquisadas todas as edi\u00e7\u00f5es do Di\u00e1rio Oficial do Munic\u00edpio (DOM) do Rio de Janeiro, e encontradas cita\u00e7\u00f5es da empresa respons\u00e1vel pela constru\u00e7\u00e3o da ciclovia, a  CONCREMAT, de 2012 a 2016 . Apenas separatas com alguma cita\u00e7\u00e3o expl\u00edcita foram requisitadas, para primeira an\u00e1lise e triagem.", 
+            "title": "Levantamentos preliminares"
+        }, 
+        {
+            "location": "/report/curadoria001/#endossos-e-revisores-desta-pagina", 
+            "text": "Al\u00e9m dos  revisores listados no hist\u00f3rico desta p\u00e1gina , curdores que endossam o seu conte\u00fado:   Bruna Santos  Marco Zanchi  Voc\u00ea curador: edite o arquivo para acrescentar  seu nome aqui , precisamos no m\u00ednimo 2 curadores  endossando  (atestando que concorda com todo o contedo acima) para iniciar o processo.", 
+            "title": "Endossos e revisores desta p\u00e1gina"
+        }, 
+        {
+            "location": "/report/curadoria003/", 
+            "text": "Curadoria de Avalia\u00e7\u00e3o por Concilia\u00e7\u00e3o das Fontes do DOM-SP\n\n\nObjetivo\n: Auditorar por amostragem e compara\u00e7\u00e3o as fontes PDF do Di\u00e1rio Oficial do Munic\u00edpio de S\u00e3o Paulo e do Di\u00e1rio Livre, por m\u00e9todos de concilia\u00e7\u00e3o do TXT de ambas fontes.\n\n\nInicio\n: 2017-03-16\n\n\nCuradores\n\n\n\n\nPeter Krauss (\nppkrauss\n \nmembro da OKBR\n)\n\n\nDomingo Alvarez Duarte\n\n\n\n\nOrigem e motiva\u00e7\u00f5es do projeto\n\n\nAt\u00e9 o momento (mar\u00e7o de 2017) o DOM-SP \u00e9 produzido oficialmente apenas em PDF, de modo que \u00e9 apenas o PDF que tem valor de prova jur\u00eddica.\nOs conte\u00fados utilizados pelo Di\u00e1rio Livro fazem parte da mesma cadeia e s\u00e3o confi\u00e1veis, ainda assim podem n\u00e3o corresponder ao oficial, de modo que a correspond\u00eancia precisa ser comprovada. Atrav\u00e9s de amostragem a confiabilidade global pode ser avaliada.\n\n\nLevantamentos preliminares\n\n\nUma amostra de edi\u00e7\u00e3o de janeiro de 2011, com disponibilidade em ambos, PDF oficial e Diario Livre, foi avaliada. \nO PDF oficial n\u00e3o pode ser segmentado em mat\u00e9rias, e a uni\u00e3o das mat\u00e9rias isoladas do Di\u00e1rio Livre n\u00e3o forma todos os conte\u00fados.\nOptou-se por aproveitar o \u00edndice (sum\u00e1rio do di\u00e1rio) e o recurso de segmenta\u00e7\u00e3o pelo \u00edndice no PDF oficial, \nde modo que se\u00e7\u00f5es podem ser compostas.\nAs mesmas se\u00e7\u00f5es podem tamb\u00e9m utilizadas como unidade de compara\u00e7\u00e3o.\n\n\nEndossos e revisores desta p\u00e1gina\n\n\nAl\u00e9m dos \nrevisores listados no hist\u00f3rico desta p\u00e1gina\n, curdores que endossam o seu conte\u00fado:\n\n\n\n\nFulano\n\n\n...\n\n\nVoc\u00ea curador: edite o arquivo para acrescentar \nseu nome aqui\n, precisamos no m\u00ednimo 2 curadores \nendossando\n (atestando que concorda com todo o contedo acima) para iniciar o processo.", 
+            "title": "Curadoria-3"
+        }, 
+        {
+            "location": "/report/curadoria003/#curadoria-de-avaliacao-por-conciliacao-das-fontes-do-dom-sp", 
+            "text": "Objetivo : Auditorar por amostragem e compara\u00e7\u00e3o as fontes PDF do Di\u00e1rio Oficial do Munic\u00edpio de S\u00e3o Paulo e do Di\u00e1rio Livre, por m\u00e9todos de concilia\u00e7\u00e3o do TXT de ambas fontes.  Inicio : 2017-03-16", 
+            "title": "Curadoria de Avalia\u00e7\u00e3o por Concilia\u00e7\u00e3o das Fontes do DOM-SP"
+        }, 
+        {
+            "location": "/report/curadoria003/#curadores", 
+            "text": "Peter Krauss ( ppkrauss   membro da OKBR )  Domingo Alvarez Duarte", 
+            "title": "Curadores"
+        }, 
+        {
+            "location": "/report/curadoria003/#origem-e-motivacoes-do-projeto", 
+            "text": "At\u00e9 o momento (mar\u00e7o de 2017) o DOM-SP \u00e9 produzido oficialmente apenas em PDF, de modo que \u00e9 apenas o PDF que tem valor de prova jur\u00eddica.\nOs conte\u00fados utilizados pelo Di\u00e1rio Livro fazem parte da mesma cadeia e s\u00e3o confi\u00e1veis, ainda assim podem n\u00e3o corresponder ao oficial, de modo que a correspond\u00eancia precisa ser comprovada. Atrav\u00e9s de amostragem a confiabilidade global pode ser avaliada.", 
+            "title": "Origem e motiva\u00e7\u00f5es do projeto"
+        }, 
+        {
+            "location": "/report/curadoria003/#levantamentos-preliminares", 
+            "text": "Uma amostra de edi\u00e7\u00e3o de janeiro de 2011, com disponibilidade em ambos, PDF oficial e Diario Livre, foi avaliada. \nO PDF oficial n\u00e3o pode ser segmentado em mat\u00e9rias, e a uni\u00e3o das mat\u00e9rias isoladas do Di\u00e1rio Livre n\u00e3o forma todos os conte\u00fados.\nOptou-se por aproveitar o \u00edndice (sum\u00e1rio do di\u00e1rio) e o recurso de segmenta\u00e7\u00e3o pelo \u00edndice no PDF oficial, \nde modo que se\u00e7\u00f5es podem ser compostas.\nAs mesmas se\u00e7\u00f5es podem tamb\u00e9m utilizadas como unidade de compara\u00e7\u00e3o.", 
+            "title": "Levantamentos preliminares"
+        }, 
+        {
+            "location": "/report/curadoria003/#endossos-e-revisores-desta-pagina", 
+            "text": "Al\u00e9m dos  revisores listados no hist\u00f3rico desta p\u00e1gina , curdores que endossam o seu conte\u00fado:   Fulano  ...  Voc\u00ea curador: edite o arquivo para acrescentar  seu nome aqui , precisamos no m\u00ednimo 2 curadores  endossando  (atestando que concorda com todo o contedo acima) para iniciar o processo.", 
+            "title": "Endossos e revisores desta p\u00e1gina"
+        }
+    ]
+}

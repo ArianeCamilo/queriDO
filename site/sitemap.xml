@@ -3,34 +3,86 @@
 
     
     <url>
-     <loc>/</loc>
-     <lastmod>2017-04-03</lastmod>
+     <loc>/README/</loc>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/abouTeste/</loc>
-     <lastmod>2017-04-03</lastmod>
+     <loc>/metodologia/</loc>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/report/curadoria001/</loc>
-     <lastmod>2017-04-03</lastmod>
+     <loc>/historico/</loc>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
+        
     <url>
-     <loc>/report/curadoria003/</loc>
-     <lastmod>2017-04-03</lastmod>
+     <loc>/curadorias/</loc>
+     <lastmod>2017-04-04</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>/reports/curadoria001/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/reports/curadoria003/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/reports/curadoria001/report01/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/ferramentas/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/trazdia-uso/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/diarioLivre-uso/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/poppler-uso/</loc>
+     <lastmod>2017-04-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>

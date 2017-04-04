@@ -1,7 +1,16 @@
-site_name: Documentação do Projeto QueriDO
+site_name: QueriDO - Documentação
 pages:
-    - Home: index.md
-    - About: abouTeste.md
-    - Curadoria-1: report/curadoria001.md
-    - Curadoria-3: report/curadoria003.md
-
+    - Home: README.md
+    - Metodologia: metodologia.md
+    - Histórico: historico.md
+    - Curadorias: 
+        - Regulamento: curadorias.md
+        - Curadoria-1: reports/curadoria001.md
+        - Curadoria-3: reports/curadoria003.md
+    - Relatórios:
+        - Relatório-1.1: reports/curadoria001/report01.md
+    - Ferramentas: 
+        - Apresentação: ferramentas.md
+        - TrazDia: trazdia-uso.md 
+        - Diário Livre: diarioLivre-uso.md 
+        - Poppler: poppler-uso.md

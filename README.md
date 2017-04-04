@@ -8,9 +8,9 @@ A **comunidade mantenedora deste projeto** é formada por dois grupos:
 
 * **experts**: entusiastas de dados abertos e [*data scraping*](https://en.wikipedia.org/wiki/Data_scraping), ajudando  a *curadoria* a achar a "agulha no palheiro", e preparar milhares de *separatas* de diários oficiais para constituir um [*corpus* textual](https://en.wikipedia.org/wiki/Corpus_linguistics) de análise: bem estruturado e suficientemente completo para cada *alvo* definido pelas *curadoriais*.  <br/>PS: um _expert_ pode também ser membro de uma _curadoria_; existe um subconjunto dos *experts*  que [contribui também no desenvolvimento](https://github.com/okfn-brasil/queriDO/graphs/contributors) do software do projeto.
 
-[Clique aqui](https://okfn-brasil.github.io/queriDO/) para testar as separatas elencadas pela [*Curadoria da ciclovia Tim Maia*](report/curadoria001.md).
+[Clique aqui](https://okfn-brasil.github.io/queriDO/) para testar as separatas elencadas pela [*Curadoria da ciclovia Tim Maia*](docs/reports/curadoria001.md).
 
-Maiores detalhes ver um [breve histórico do projeto](_docs/README.md).
+Maiores detalhes ver um [breve histórico do projeto](https://okfn-brasil.github.io/queriDO/site/historico),  [sua **documentação**](https://okfn-brasil.github.io/queriDO/site) ou os [relatórios das curadorias]().
 
 -----
 
@@ -20,7 +20,7 @@ Dinâmica da formação de alvos e conteúdos neste projeto:
 
 **Passo-1**. **Manifestação de interesse**. Um grupo de pessoas (curadores) entra em contato com o projeto e  [se registra nesta planilha](data/curadoria.csv) (editável [neste GDoc](https://docs.google.com/spreadsheets/d/1-LqoLFCMPWs0UHrY3WXSV10S9eYIxpshOzDXsIFXlJA/edit#gid=770195002)), estabelecendo informalmente uma denominação e um alvo.
 
-**Passo-2**. **Formalização da _curadoria_ e seu _alvo_**. Acolhidos por pelo menos um [membro da OKBr](https://br.okfn.org/membros/), que auxilia o grupo expor mais detalhes sobre motivações e metas, [num Relatório de Apresentaço como este](report/curadoria001.md) (`report/curadoria001-apresent.md`). Havendo necessidade os dados da planilha são modificados para refletir melhor o expresso pelo relatório.
+**Passo-2**. **Formalização da _curadoria_ e seu _alvo_**. Acolhidos por pelo menos um [membro da OKBr](https://br.okfn.org/membros/), que auxilia o grupo expor mais detalhes sobre motivações e metas, [num Relatório de Apresentaço como este](docs/reports/curadoria001.md) (`docs/reports/curadoria001-apresent.md`). Havendo necessidade os dados da planilha são modificados para refletir melhor o expresso pelo relatório.
 
 **Passo-3**.  **Testes, prospecção e avaliação da viabilidade**. Com apoio do grupo de *experts*, a nova curadoria faz testes de prospecção (usando outras ferramentas como o Diário Livre, os diversos diários oficiais, etc.) e define com mais precisão seu alvo, reformulando-os se necessário. Com os testes também refina o seu relatório e "bate martelo" sobre qual Diário Oficial e quais anos prospectar.
 
@@ -53,9 +53,9 @@ Ver [pasta `docs`](docs/README.md).
 
 * Para **identificação unívoca e transparente** de separatas das matérias dos diários oficiais: [buscas LexML](http://lexml.gov.br/), [normas LexML](http://projeto.lexml.gov.br/), generalização das [URNs LEX](https://en.wikipedia.org/wiki/Lex_(URN)).
 
-* Para **tramento dos PDFs oficiais e prova** de que "PDF melhorado" é equivalente ao oficial. Ver [okfn-brasil/poppler](https://github.com/okfn-brasil/poppler) e [curadoria-003](report/curadoria003.md).
+* Para **tramento dos PDFs oficiais e prova** de que "PDF melhorado" é equivalente ao oficial. Ver [okfn-brasil/poppler](https://github.com/okfn-brasil/poppler) e [curadoria-003](docs/reports/curadoria003.md).
 
-* [Projeto TrazDia](https://github.com/okfn-brasil/trazdia): módulo de busca e recuperação dos originais. 
+* [Projeto TrazDia](https://github.com/okfn-brasil/trazdia): módulo de busca e recuperação dos originais.
 
 * [repositórios Datasets-br](https://github.com/datasets-br): para dados complementares, tais como IDs (CPF e CNPJ) das pessoas físicas e jurídicas, oferecidos pelo [public-person](https://github.com/datasets-br/public-person).
 

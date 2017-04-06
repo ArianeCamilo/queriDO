@@ -10,6 +10,8 @@ A **comunidade mantenedora deste projeto** é formada por dois grupos:
 
 [Clique aqui](https://okfn-brasil.github.io/queriDO/) para testar as separatas elencadas pela [*Curadoria da ciclovia Tim Maia*](docs/reports/curadoria001.md).
 
+[Matéria no blog da OKBR](https://br.okfn.org/2017/03/02/projeto-busca-tornar-diario-oficial-mais-acessivel).
+
 Maiores detalhes ver um [breve histórico do projeto](https://okfn-brasil.github.io/queriDO/site/historico),  [sua **documentação**](https://okfn-brasil.github.io/queriDO/site) ou os [relatórios das curadorias]().
 
 -----

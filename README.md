@@ -12,7 +12,7 @@ A **comunidade mantenedora deste projeto** é formada por dois grupos:
 
 [Matéria no blog da OKBR](https://br.okfn.org/2017/03/02/projeto-busca-tornar-diario-oficial-mais-acessivel).
 
-Maiores detalhes ver um [breve histórico do projeto](https://okfn-brasil.github.io/queriDO/site/historico),  [sua **documentação**](https://okfn-brasil.github.io/queriDO/site) ou os [relatórios das curadorias]().
+Maiores detalhes ver um [breve histórico do projeto](http://45.55.221.141/oficial.news/site/historico/) ou  [sua **documentação**](http://45.55.221.141/oficial.news/site/README/) onde também são apresentados os relatórios das curadorias. 
 
 -----
 

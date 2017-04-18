@@ -14,3 +14,5 @@ pages:
         - TrazDia: trazdia-uso.md 
         - Diário Livre: diarioLivre-uso.md 
         - Poppler: poppler-uso.md
+theme_dir: ../miniguias/okbr_theme
+

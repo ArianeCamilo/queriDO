@@ -167,7 +167,12 @@
         }, 
         {
             "location": "/trazdia-uso/", 
-            "text": "", 
+            "text": "TrazDia\n\n\nTraz\n o \nDia\nrio Oficial. Baixa os Diarios Oficiais brasileiros direto dos sites oficiais do governo.\n\n\nhttps://github.com/okfn-brasil/trazdia", 
+            "title": "TrazDia"
+        }, 
+        {
+            "location": "/trazdia-uso/#trazdia", 
+            "text": "Traz  o  Dia rio Oficial. Baixa os Diarios Oficiais brasileiros direto dos sites oficiais do governo.  https://github.com/okfn-brasil/trazdia", 
             "title": "TrazDia"
         }, 
         {

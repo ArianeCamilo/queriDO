@@ -1,6 +1,7 @@
 site_name: QueriDO - Documentação
 pages:
-    - Home: README.md
+    - Home: index.md
+    - Home2: README.md
     - Metodologia: metodologia.md
     - Histórico: historico.md
     - Curadorias: 
@@ -14,5 +15,5 @@ pages:
         - TrazDia: trazdia-uso.md 
         - Diário Livre: diarioLivre-uso.md 
         - Poppler: poppler-uso.md
-theme_dir: ../miniguias/okbr_theme
+theme_dir: src/okbr_theme
 

@@ -1,7 +1,7 @@
 
 # Relatório-01 da Curadoria-01
 
-**Assunto**: levantamento das pessoas físicas citadas com maior frequência nos documentos, no escopo da [Curadoria-03](../curadoria003.md).
+**Assunto**: levantamento das pessoas físicas citadas com maior frequência nos documentos, no escopo da [Curadoria-01](../curadoria001.md).
 
 **Resultados**: pesquisa realizada com auxílio da marcação [*Person*](http://schema.org/Person), excluindo ocorrências desvinculadas do alvo (Concremat) e "nome de logradouro".
 
@@ -28,7 +28,7 @@ LUIZ ANTONIO CHRISPIM GUARANA    | 0 em 9  | 0% |
 LIDIA DOS SANTOS                 | 0 em 7  | 0% |
 JULIANO MOREIRA                  | 0 em 7  | 0% |
 
-Os texto das matérias pode ser recuperado no a partir do código da matéria, na [página de teste do QueriDO](xxx). Por exemplo na versão marcada da matéria 113642 vai reparar que o nome Jair é que encabeça a seção onde aparece  Concremat em vermelho.  Na matéria 186453 é o Fernando que encabeça (relator responsável).
+Os texto das matérias pode ser recuperado no a partir do código da matéria, na [página de teste do QueriDO](https://okfn-brasil.github.io/queriDO/). Por exemplo na versão marcada da matéria 113642 vai reparar que o nome Jair é que encabeça a seção onde aparece  Concremat em vermelho.  Na matéria 186453 é o Fernando que encabeça (relator responsável).
 
 Outros nomes próprios que ocorreram e ainda precisam ser conferidos, mas aparentemente não mudarão o quadro acima de mais frequentes.
 

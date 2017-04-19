@@ -1,8 +1,6 @@
 site_name: QueriDO - Documentação
 pages:
     - Home: index.md
-    - Home2: README.md
-    - Metodologia: metodologia.md
     - Histórico: historico.md
     - Curadorias: 
         - Regulamento: curadorias.md

@@ -1,6 +1,6 @@
 # Ferramentas feitas sob medida
 
-A [Metodologia QueriDO](metodologia.md) depende de algumas ferramentas de software. Pensando no passo-a-passo metodológico são ferramentas para o cumprimento das seguintes funcionalidades:
+A [Metodologia QueriDO](index.md) depende de algumas ferramentas de software. Pensando no passo-a-passo metodológico são ferramentas para o cumprimento das seguintes funcionalidades:
 
 1. Buscas por documentos e referencial de diários oficiais: por sua conta. Google, pesquisa do site do diário... Eventualmente, como no caso de São Paulo, tem [Diário Livre](http://devcolab.each.usp.br/do/).
 

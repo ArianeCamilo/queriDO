@@ -2,51 +2,31 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Links principais do \nProjeto QueriDO\n:\n\n\n\n\n\n\ntestes/demonstra\u00e7\u00e3o online\n.\n\n\n\n\n\n\ngit (reposit\u00f3rio do projeto)\n.\n\n\n\n\n\n\ndiscuss\u00f5es t\u00e9nicas e defini\u00e7\u00e3o de tarefas (\nissues\n)\n.\n\n\n\n\n\n\ndiscuss\u00f5es gerais (DiscussOKBR)\n.\n\n\n\n\n\n\nDocumenta\u00e7\u00e3o\n\n\n\n\nMetodologia\n: breve explica\u00e7\u00e3o de como funciona,  e procedimentos a seguir para colaborar.\n\n\nHist\u00f3rico\n: hist\u00f3rico, motiva\u00e7\u00f5es e evolu\u00e7\u00e3o do projeto.\n\n\nCuradorias\n (ver menu): grupos de interesse e seus alvos.\n\n\nRelat\u00f3rios\n (ver menu): resultados dos trabalhos realizados por cada curadoria.\n\n\nSoftware\n: descri\u00e7\u00e3o da arquitetura e das decis\u00f5es de projeto relativas ao software e sua infraestrutura.", 
+            "text": "Documenta\u00e7\u00e3o\n\n\nA metodologia do projeto QueriDO tem seu foco na gest\u00e3o de \nrelat\u00f3rios\n das curadorias e num \nbanco de dados\n das mat\u00e9rias trazidas do Di\u00e1rio Oficial.\n\n\nQuem traz as mat\u00e9rias originais \u00e9 o \nm\u00f3dulo TrazDia\n, e ent\u00e3o elas s\u00e3o preservadas no \nGithub\n na pasta \ncontent/original\n. Em seguida os processos s\u00e3o assistidos:  quem faz a filtragem e reestrutura\u00e7\u00e3o s\u00e3o os \nm\u00f3dulos CleanDoc e StrutDoc\n, e quem faz a marca\u00e7\u00e3o final \u00e9 o \nm\u00f3dulo MarkDoc\n. Se por acaso um desses passos requerer interven\u00e7\u00e3o humana, o resultado da interven\u00e7\u00e3o \u00e9 registrado no \nGithub\n, complementando o \ncontent/original\n. Todo o restante, automatizado, \u00e9 mantido em no banco de dados. As ferramentas do \nm\u00f3dulo de Pesquisa\n no banco de dados tamb\u00e9m permitem extra\u00e7\u00e3o automatica de dados, gerando planilhas e outros formatos de dados para an\u00e1lise ou registro na forma de relat\u00f3rio.\n\n\nPor fim, os relatporios redigidos pela curadoria s\u00e3o armazenados na pasta \nreport\n.\n\n\nTratamento prim\u00e1rio\n\n\nRegistro da mat\u00e9ria original, sua filtragem e marca\u00e7\u00e3o.\n\n\n\n\n\n\nPasso-1: obter e conferir o original. O \nm\u00f3dulo TrazDia\n faz isso automaticamente.  \n\n\n\n\n\n\nPasso-2: filtrar. Em geral ser\u00e1 autom\u00e1tico sem necessidade de interven\u00e7\u00e3o). \n\n\n\n\n\n\nPasso-3: marcar. As regras de marca\u00e7\u00e3o precisam ser revisadas pela curadoria, e eventualmente algumas marca\u00e7\u00f5es precisam ser feitas manualmente.\n \n\n\n\n\n\n\nReposit\u00f3rio QueriDO\n\n\n\n\nM\u00f3dulos do QueriDO\n\n\n...\n\n\nBusca em outros di\u00e1rios\n\n\nA organiza\u00e7\u00e3o dos materiais \u00e9 feita a cada Di\u00e1rio Oficial, mas pode-se compor um relat\u00f3rio mais amplo vinculando duas curadorias de di\u00e1rios distintos.", 
             "title": "Home"
         }, 
         {
             "location": "/#documentacao", 
-            "text": "Metodologia : breve explica\u00e7\u00e3o de como funciona,  e procedimentos a seguir para colaborar.  Hist\u00f3rico : hist\u00f3rico, motiva\u00e7\u00f5es e evolu\u00e7\u00e3o do projeto.  Curadorias  (ver menu): grupos de interesse e seus alvos.  Relat\u00f3rios  (ver menu): resultados dos trabalhos realizados por cada curadoria.  Software : descri\u00e7\u00e3o da arquitetura e das decis\u00f5es de projeto relativas ao software e sua infraestrutura.", 
-            "title": "Documenta\u00e7\u00e3o"
-        }, 
-        {
-            "location": "/README/", 
-            "text": "Links principais do \nProjeto QueriDO\n:\n\n\n\n\n\n\ntestes/demonstra\u00e7\u00e3o online\n.\n\n\n\n\n\n\ngit (reposit\u00f3rio do projeto)\n.\n\n\n\n\n\n\ndiscuss\u00f5es t\u00e9nicas e defini\u00e7\u00e3o de tarefas (\nissues\n)\n.\n\n\n\n\n\n\ndiscuss\u00f5es gerais (DiscussOKBR)\n.\n\n\n\n\n\n\nDocumenta\u00e7\u00e3o\n\n\n\n\nMetodologia\n: breve explica\u00e7\u00e3o de como funciona,  e procedimentos a seguir para colaborar.\n\n\nHist\u00f3rico\n: hist\u00f3rico, motiva\u00e7\u00f5es e evolu\u00e7\u00e3o do projeto.\n\n\nCuradorias\n (ver menu): grupos de interesse e seus alvos.\n\n\nRelat\u00f3rios\n (ver menu): resultados dos trabalhos realizados por cada curadoria.\n\n\nSoftware\n: descri\u00e7\u00e3o da arquitetura e das decis\u00f5es de projeto relativas ao software e sua infraestrutura.", 
-            "title": "Home2"
-        }, 
-        {
-            "location": "/README/#documentacao", 
-            "text": "Metodologia : breve explica\u00e7\u00e3o de como funciona,  e procedimentos a seguir para colaborar.  Hist\u00f3rico : hist\u00f3rico, motiva\u00e7\u00f5es e evolu\u00e7\u00e3o do projeto.  Curadorias  (ver menu): grupos de interesse e seus alvos.  Relat\u00f3rios  (ver menu): resultados dos trabalhos realizados por cada curadoria.  Software : descri\u00e7\u00e3o da arquitetura e das decis\u00f5es de projeto relativas ao software e sua infraestrutura.", 
-            "title": "Documenta\u00e7\u00e3o"
-        }, 
-        {
-            "location": "/metodologia/", 
-            "text": "Documenta\u00e7\u00e3o\n\n\nA metodologia do projeto QueriDO tem seu foco na gest\u00e3o de \nrelat\u00f3rios\n das curadorias e num \nbanco de dados\n das mat\u00e9rias trazidas do Di\u00e1rio Oficial.\n\n\nQuem traz as mat\u00e9rias originais \u00e9 o \nm\u00f3dulo TrazDia\n, e ent\u00e3o elas s\u00e3o preservadas no \nGithub\n na pasta \ncontent/original\n. Em seguida os processos s\u00e3o assistidos:  quem faz a filtragem e reestrutura\u00e7\u00e3o s\u00e3o os \nm\u00f3dulos CleanDoc e StrutDoc\n, e quem faz a marca\u00e7\u00e3o final \u00e9 o \nm\u00f3dulo MarkDoc\n. Se por acaso um desses passos requerer interven\u00e7\u00e3o humana, o resultado da interven\u00e7\u00e3o \u00e9 registrado no \nGithub\n, complementando o \ncontent/original\n. Todo o restante, automatizado, \u00e9 mantido em no banco de dados. As ferramentas do \nm\u00f3dulo de Pesquisa\n no banco de dados tamb\u00e9m permitem extra\u00e7\u00e3o automatica de dados, gerando planilhas e outros formatos de dados para an\u00e1lise ou registro na forma de relat\u00f3rio.\n\n\nPor fim, os relatporios redigidos pela curadoria s\u00e3o armazenados na pasta \nreport\n.\n\n\nTratamento prim\u00e1rio\n\n\nRegistro da mat\u00e9ria original, sua filtragem e marca\u00e7\u00e3o.\n\n\n\n\n\n\nPasso-1: obter e conferir o original. O \nm\u00f3dulo TrazDia\n faz isso automaticamente.  \n\n\n\n\n\n\nPasso-2: filtrar. Em geral ser\u00e1 autom\u00e1tico sem necessidade de interven\u00e7\u00e3o). \n\n\n\n\n\n\nPasso-3: marcar. As regras de marca\u00e7\u00e3o precisam ser revisadas pela curadoria, e eventualmente algumas marca\u00e7\u00f5es precisam ser feitas manualmente.\n \n\n\n\n\n\n\nReposit\u00f3rio QueriDO\n\n\n\n\nM\u00f3dulos do QueriDO\n\n\n...\n\n\nBusca em outros di\u00e1rios\n\n\nA organiza\u00e7\u00e3o dos materiais \u00e9 feita a cada Di\u00e1rio Oficial, mas pode-se compor um relat\u00f3rio mais amplo vinculando duas curadorias de di\u00e1rios distintos.", 
-            "title": "Metodologia"
-        }, 
-        {
-            "location": "/metodologia/#documentacao", 
             "text": "A metodologia do projeto QueriDO tem seu foco na gest\u00e3o de  relat\u00f3rios  das curadorias e num  banco de dados  das mat\u00e9rias trazidas do Di\u00e1rio Oficial.  Quem traz as mat\u00e9rias originais \u00e9 o  m\u00f3dulo TrazDia , e ent\u00e3o elas s\u00e3o preservadas no  Github  na pasta  content/original . Em seguida os processos s\u00e3o assistidos:  quem faz a filtragem e reestrutura\u00e7\u00e3o s\u00e3o os  m\u00f3dulos CleanDoc e StrutDoc , e quem faz a marca\u00e7\u00e3o final \u00e9 o  m\u00f3dulo MarkDoc . Se por acaso um desses passos requerer interven\u00e7\u00e3o humana, o resultado da interven\u00e7\u00e3o \u00e9 registrado no  Github , complementando o  content/original . Todo o restante, automatizado, \u00e9 mantido em no banco de dados. As ferramentas do  m\u00f3dulo de Pesquisa  no banco de dados tamb\u00e9m permitem extra\u00e7\u00e3o automatica de dados, gerando planilhas e outros formatos de dados para an\u00e1lise ou registro na forma de relat\u00f3rio.  Por fim, os relatporios redigidos pela curadoria s\u00e3o armazenados na pasta  report .", 
             "title": "Documenta\u00e7\u00e3o"
         }, 
         {
-            "location": "/metodologia/#tratamento-primario", 
+            "location": "/#tratamento-primario", 
             "text": "Registro da mat\u00e9ria original, sua filtragem e marca\u00e7\u00e3o.    Passo-1: obter e conferir o original. O  m\u00f3dulo TrazDia  faz isso automaticamente.      Passo-2: filtrar. Em geral ser\u00e1 autom\u00e1tico sem necessidade de interven\u00e7\u00e3o).     Passo-3: marcar. As regras de marca\u00e7\u00e3o precisam ser revisadas pela curadoria, e eventualmente algumas marca\u00e7\u00f5es precisam ser feitas manualmente.", 
             "title": "Tratamento prim\u00e1rio"
         }, 
         {
-            "location": "/metodologia/#repositorio-querido", 
+            "location": "/#repositorio-querido", 
             "text": "", 
             "title": "Reposit\u00f3rio QueriDO"
         }, 
         {
-            "location": "/metodologia/#modulos-do-querido", 
+            "location": "/#modulos-do-querido", 
             "text": "...", 
             "title": "M\u00f3dulos do QueriDO"
         }, 
         {
-            "location": "/metodologia/#busca-em-outros-diarios", 
+            "location": "/#busca-em-outros-diarios", 
             "text": "A organiza\u00e7\u00e3o dos materiais \u00e9 feita a cada Di\u00e1rio Oficial, mas pode-se compor um relat\u00f3rio mais amplo vinculando duas curadorias de di\u00e1rios distintos.", 
             "title": "Busca em outros di\u00e1rios"
         }, 

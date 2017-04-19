@@ -49,12 +49,6 @@
                         <a href=".">Home</a>
                     </li>
                     <li >
-                        <a href="README/">Home2</a>
-                    </li>
-                    <li >
-                        <a href="metodologia/">Metodologia</a>
-                    </li>
-                    <li >
                         <a href="historico/">Histórico</a>
                     </li>
                     <li class="dropdown">
@@ -118,7 +112,7 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="README/">
+                        <a rel="prev" href="historico/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -131,38 +125,43 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#documentacao">Documentação</a></li>
+            <li><a href="#tratamento-primario">Tratamento primário</a></li>
+            <li><a href="#repositorio-querido">Repositório QueriDO</a></li>
+            <li><a href="#modulos-do-querido">Módulos do QueriDO</a></li>
+            <li><a href="#busca-em-outros-diarios">Busca em outros diários</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<p>Links principais do <strong>Projeto QueriDO</strong>:</p>
+<h1 id="documentacao">Documentação</h1>
+<p>A metodologia do projeto QueriDO tem seu foco na gestão de <em>relatórios</em> das curadorias e num <em>banco de dados</em> das matérias trazidas do Diário Oficial.</p>
+<p>Quem traz as matérias originais é o <em>módulo TrazDia</em>, e então elas são preservadas no <em>Github</em> na pasta <code>content/original</code>. Em seguida os processos são assistidos:  quem faz a filtragem e reestruturação são os <em>módulos CleanDoc e StrutDoc</em>, e quem faz a marcação final é o <em>módulo MarkDoc</em>. Se por acaso um desses passos requerer intervenção humana, o resultado da intervenção é registrado no <em>Github</em>, complementando o <code>content/original</code>. Todo o restante, automatizado, é mantido em no banco de dados. As ferramentas do <em>módulo de Pesquisa</em> no banco de dados também permitem extração automatica de dados, gerando planilhas e outros formatos de dados para análise ou registro na forma de relatório.</p>
+<p>Por fim, os relatporios redigidos pela curadoria são armazenados na pasta <code>report</code>.</p>
+<h2 id="tratamento-primario">Tratamento primário</h2>
+<p>Registro da matéria original, sua filtragem e marcação.</p>
 <ul>
 <li>
-<p><a href="https://okfn-brasil.github.io/queriDO/">testes/demonstração online</a>.</p>
+<p>Passo-1: obter e conferir o original. O <em>módulo TrazDia</em> faz isso automaticamente.  <img alt="" src="./assets/tela3-original-380px.png" /></p>
 </li>
 <li>
-<p><a href="https://github.com/okfn-brasil/queriDO">git (repositório do projeto)</a>.</p>
+<p>Passo-2: filtrar. Em geral será automático sem necessidade de intervenção). <img alt="" src="./assets/tela2-filtrado-380px.png" /></p>
 </li>
 <li>
-<p><a href="https://github.com/okfn-brasil/queriDO/issues">discussões ténicas e definição de tarefas (<em>issues</em>)</a>.</p>
-</li>
-<li>
-<p><a href="https://discuss.okfn.org/c/local-groups/okbr">discussões gerais (DiscussOKBR)</a>.</p>
+<p>Passo-3: marcar. As regras de marcação precisam ser revisadas pela curadoria, e eventualmente algumas marcações precisam ser feitas manualmente.<br/> <img alt="" src="./assets/tela1v0.1-380px.png" /></p>
 </li>
 </ul>
-<h2 id="documentacao">Documentação</h2>
-<ul>
-<li><a href="metodologia/"><strong>Metodologia</strong></a>: breve explicação de como funciona,  e procedimentos a seguir para colaborar.</li>
-<li><a href="historico/"><strong>Histórico</strong></a>: histórico, motivações e evolução do projeto.</li>
-<li><a href="curadorias/"><strong>Curadorias</strong></a> (ver menu): grupos de interesse e seus alvos.</li>
-<li><strong>Relatórios</strong> (ver menu): resultados dos trabalhos realizados por cada curadoria.</li>
-<li><strong>Software</strong>: descrição da arquitetura e das decisões de projeto relativas ao software e sua infraestrutura.</li>
-</ul></div>
+<h2 id="repositorio-querido">Repositório QueriDO</h2>
+<p><img alt="" src="./assets/repositorios01-380px.png" /></p>
+<h2 id="modulos-do-querido">Módulos do QueriDO</h2>
+<p>...</p>
+<h2 id="busca-em-outros-diarios">Busca em outros diários</h2>
+<p>A organização dos materiais é feita a cada Diário Oficial, mas pode-se compor um relatório mais amplo vinculando duas curadorias de diários distintos.</p>
+<p><img alt="" src="./assets/telaDiarioLivre01-380px.png" /></p></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-            <p>Documento gerado por  <a href="https://github.com/okfn-brasil/queriDO">projeto <tt><b>queriDO</b></tt></a> 
+            <p><a href="https://github.com/okfn-brasil/queriDO">projeto <tt><b>queriDO</b></tt></a> 
 		da <a href="https://br.okfn.org/">OKBR</a>.</p>
         </footer>
         <script>var base_url = '.';</script>
@@ -197,5 +196,5 @@
 
 <!--
 MkDocs version : 0.16.2
-Build Date UTC : 2017-04-19 00:24:03
+Build Date UTC : 2017-04-19 01:12:32
 -->

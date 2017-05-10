@@ -2,4 +2,4 @@
 
 _Traz_ o *Dia*rio Oficial. Baixa os Diarios Oficiais brasileiros direto dos sites oficiais do governo.
 
-https://github.com/okfn-brasil/trazdia
+Ver [git okfn-brasil/trazdia](https://github.com/okfn-brasil/trazdia)

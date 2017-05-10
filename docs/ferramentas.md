@@ -1,6 +1,6 @@
 # Ferramentas feitas sob medida
 
-A [Metodologia QueriDO](index.md) depende de algumas ferramentas de software. Pensando no passo-a-passo metodológico são ferramentas para o cumprimento das seguintes funcionalidades:
+A [Metodologia QueriDO](curadorias.md) depende de algumas ferramentas de software. Pensando no passo-a-passo metodológico são ferramentas para o cumprimento das seguintes funcionalidades:
 
 1. Buscas por documentos e referencial de diários oficiais: por sua conta. Google, pesquisa do site do diário... Eventualmente, como no caso de São Paulo, tem [Diário Livre](http://devcolab.each.usp.br/do/).
 
@@ -21,14 +21,15 @@ A [Metodologia QueriDO](index.md) depende de algumas ferramentas de software. Pe
 A arquitetura de um sistema de software é forma como os blocos básicos e subsistemas foram organizados.
 No QueriDO foi adotada uma arquitetura baseada em serviços (SOA), de backend e frontend. Cada módulo é independnete e auto-contido, e consiste de um conjunto coeso de serviços.
 
-### Frontend
+### Front-end
 
 .. Diário Livre ... interface de testes ...  Relatórios aqui na documentação...
 
 ... Interfaces de texto para uso em terminal, pelos experts...
 
-### Backend
-Todo módulo de backend precisa ser descrito por uma especificação OpenAPI.
+### Back-end
+
+Todo módulo de back-end precisa ser descrito por uma especificação [OpenAPI](http://openapis.org), e então "plugada" via API gateway.
 
 ![](assets/Reverse_proxy2.svg.png)
 

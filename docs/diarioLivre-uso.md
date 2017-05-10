@@ -1,3 +1,5 @@
+# Diário Livre
+
 ...
 em construção **manual do Diári Livre**, ver http://devcolab.each.usp.br/do/ e [seu git](https://github.com/rafaeusantana/docsolr).
 

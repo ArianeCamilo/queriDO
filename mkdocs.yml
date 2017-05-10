@@ -1,6 +1,6 @@
-site_name: QueriDO - Documentação
+site_name: projeto <i>QueriDO</i>
 pages:
-    - Home: index.md
+    - Documentação: index.md
     - Histórico: historico.md
     - Curadorias: 
         - Regulamento: curadorias.md

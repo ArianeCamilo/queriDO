@@ -12,9 +12,10 @@ A [Metodologia QueriDO](curadorias.md) depende de algumas ferramentas de softwar
 
 ## Como usar
 
-* [Como usar o TrazDia](trazdia-uso.md)
+* [Como usar o Demo](demo-uso.md)
 * [Como usar o Diário Livre](diarioLivre-uso.md)
 * [Como usar o Poppler](poppler-uso.md)
+* [Como usar o TrazDia](trazdia-uso.md)
 
 ## Arquitetura
 

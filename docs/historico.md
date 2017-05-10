@@ -18,7 +18,7 @@ Generalizar para "qualquer município" e abrir para a participação de outros v
 
 6. Automatizar o que for possível no processo de marcação adicional.
 
-## Histórico e motivações do projeto
+## Histórico e motivações
 
 Conforme colocado pelos fundadores do QueriDO, Bruna, João e Henrique:
 

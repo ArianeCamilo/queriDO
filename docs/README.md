@@ -24,3 +24,8 @@ Links principais do **Projeto QueriDO**:
 * **Software**: descrição da arquitetura e das decisões de projeto relativas ao software e sua infraestrutura.
 
 Na pasta [**/reports**](reports) pode ser encontrado cada um dos "estatutos" das curadorias, e a cada subpasta um conjunto de relatórios da respectiva curadoria. Por exemplo a *Curadoria-1* é apresentada em [reports/curadoria001.md](reports/curadoria001.md) e tem seus relatórios em [reports/curadoria001](reports/curadoria001) (por exemplo o *Relatório-1.1* em [reports/curadoria001/report01.md](reports/curadoria001/report01.md)).
+
+## Geração do site de documentação
+
+Apesar da visualização pelos arquivos  `*.md`  ser razoável, é dada preferência ao uso do site de documentação, que simplesmente apresenta os mesmos arquivos `*.md` em um template mais limpo e navegável. O site é gerado pelo comando `mkdocs build`, exatamente da mesma maneira que os [*miniguias* da OKBr](https://github.com/okfn-brasil/miniguias).
+

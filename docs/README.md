@@ -11,8 +11,14 @@ Links principais do **Projeto QueriDO**:
 
 ## Documentação
 
-* [**Metodologia**](metodologia.md): breve explicação de como funciona,  e procedimentos a seguir para colaborar.
+* [**Metodologia** (index)](index.md): breve explicação de como funciona,  e procedimentos a seguir para colaborar.
+
 * [**Histórico**](historico.md): histórico, motivações e evolução do projeto.
-* [**Curadorias**](curadorias.md) (ver menu): grupos de interesse e seus alvos.
-* **Relatórios** (ver menu): resultados dos trabalhos realizados por cada curadoria.
+
+* [**Curadorias**](curadorias.md) (ver também menu): elas são os grupos de interesse definidos pelos seus alvos. Seu conteúdo está na forma de relatórios, sob a pasta `/reports`, ou ainda, em alguns casos, na forma de datasets, sub `/data`.
+
+* **Relatórios** (ver menu): resultados dos trabalhos realizados por cada curadoria. Estão sob a pasta `/reports`. 
+
 * **Software**: descrição da arquitetura e das decisões de projeto relativas ao software e sua infraestrutura.
+
+Na pasta [**/reports**](reports) pode ser encontrado cada um dos "estatutos" das curadorias, e a cada subpasta um conjunto de relatórios da respectiva curadoria. Por exemplo a *Curadoria-1* é apresentada em [reports/curadoria001.md](reports/curadoria001.md) e tem seus relatórios em [reports/curadoria001](reports/curadoria001) (por exemplo o *Relatório-1.1* em [reports/curadoria001/report01.md](reports/curadoria001/report01.md)).

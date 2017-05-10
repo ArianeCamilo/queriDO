@@ -8,11 +8,15 @@ A **comunidade mantenedora deste projeto** é formada por dois grupos:
 
 * **experts**: entusiastas de dados abertos e [*data scraping*](https://en.wikipedia.org/wiki/Data_scraping), ajudando  a *curadoria* a achar a "agulha no palheiro", e preparar milhares de *separatas* de diários oficiais para constituir um [*corpus* textual](https://en.wikipedia.org/wiki/Corpus_linguistics) de análise: bem estruturado e suficientemente completo para cada *alvo* definido pelas *curadoriais*.  <br/>PS: um _expert_ pode também ser membro de uma _curadoria_; existe um subconjunto dos *experts*  que [contribui também no desenvolvimento](https://github.com/okfn-brasil/queriDO/graphs/contributors) do software do projeto.
 
-[Clique aqui](https://okfn-brasil.github.io/queriDO/) para testar as separatas elencadas pela [*Curadoria da ciclovia Tim Maia*](docs/reports/curadoria001.md).
+## Documentação e uso
 
-[Matéria no blog da OKBR](https://br.okfn.org/2017/03/02/projeto-busca-tornar-diario-oficial-mais-acessivel).
+Navegar [pela documentação completa no QueriDO/site](https://okfn-brasil.github.io/queriDO/site/) ou:
 
-Maiores detalhes ver um [breve histórico do projeto](http://45.55.221.141/oficial.news/site/historico/) ou  [sua **documentação**](http://45.55.221.141/oficial.news/site/README/) onde também são apresentados os relatórios das curadorias. 
+* [Clique aqui](https://okfn-brasil.github.io/queriDO/) para testar as separatas elencadas pela [*Curadoria da ciclovia Tim Maia*](docs/reports/curadoria001.md).
+
+* [Matéria no blog da OKBR](https://br.okfn.org/2017/03/02/projeto-busca-tornar-diario-oficial-mais-acessivel).
+
+<!--
 
 -----
 
@@ -49,7 +53,9 @@ Os *passos 4, 5 e 6* descritos acima são indicados nas visualizações como "re
 Os termos coloridos são justamente os elementos marcados: definem em contexto adequado a valores, citações, códigos ou nomes relevates para a análise e cruzamento de dados no diário oficial. Softwares adicionais podem compor planilhas de dados extraídos de dezenas ou milhares desses registros.
 
 ## Documentação do projeto
+
 Ver [pasta `docs`](docs/README.md).
+-->
 
 ## Projetos relacionados
 

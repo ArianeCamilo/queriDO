@@ -58,7 +58,7 @@
     </url>
         
     <url>
-     <loc>/trazdia-uso/</loc>
+     <loc>/demo-uso/</loc>
      <lastmod>2017-05-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -71,6 +71,12 @@
         
     <url>
      <loc>/poppler-uso/</loc>
+     <lastmod>2017-05-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/trazdia-uso/</loc>
      <lastmod>2017-05-10</lastmod>
      <changefreq>daily</changefreq>
     </url>

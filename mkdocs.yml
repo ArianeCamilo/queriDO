@@ -10,8 +10,9 @@ pages:
         - Relatório-1.1: reports/curadoria001/report01.md
     - Ferramentas: 
         - Apresentação: ferramentas.md
-        - TrazDia: trazdia-uso.md 
-        - Diário Livre: diarioLivre-uso.md 
+        - Demo: demo-uso.md
+        - Diário Livre: diarioLivre-uso.md
         - Poppler: poppler-uso.md
+        - TrazDia: trazdia-uso.md 
 theme_dir: src/okbr_theme
 

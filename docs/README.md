@@ -1,7 +1,9 @@
 
 Links principais do **Projeto QueriDO**:
 
-* [testes/demonstração online](https://okfn-brasil.github.io/queriDO/).
+* [site da **Documentação**](https://okfn-brasil.github.io/queriDO/site/).
+
+* [site para Demo e testes](https://okfn-brasil.github.io/queriDO/).
 
 * [git (repositório do projeto)](https://github.com/okfn-brasil/queriDO).
 

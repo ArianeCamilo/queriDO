@@ -17,7 +17,7 @@ Links principais do **Projeto QueriDO**:
 
 * [**Histórico**](historico.md): histórico, motivações e evolução do projeto.
 
-* [**Curadorias**](curadorias.md) (ver também menu): elas são os grupos de interesse definidos pelos seus alvos. Seu conteúdo está na forma de relatórios, sob a pasta `/reports`, ou ainda, em alguns casos, na forma de datasets, sub `/data`.
+* [**Curadorias**](curadorias.md) (ver também menu): grupos de interesse definidos pelos seus alvos. Seu conteúdo está na forma de relatórios, sob a pasta `/reports`, ou ainda, em alguns casos, na forma de datasets, sob a pasta `/data`.
 
 * **Relatórios** (ver menu): resultados dos trabalhos realizados por cada curadoria. Estão sob a pasta `/reports`. 
 

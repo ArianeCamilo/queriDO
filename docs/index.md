@@ -11,8 +11,8 @@ e então elas são preservadas no *Github* na pasta `content/original`.
 Em seguida os processos são assistidos:  quem faz a filtragem e reestruturação são os *módulos CleanDoc e StrutDoc*, 
 e quem faz a marcação final é o *módulo MarkDoc*. Se por acaso um desses passos requerer intervenção humana, 
 o resultado da intervenção é registrado no *Github*, complementando o `content/original`. 
-Todo o restante, automatizado, é mantido em no banco de dados. 
-As ferramentas do *módulo de Pesquisa* no banco de dados também permitem extração automatica de dados, 
+Todo o restante, automatizado, é mantido em um banco de dados. 
+As ferramentas do *módulo de Pesquisa* no banco de dados também permitem extração automática de dados, 
 gerando planilhas e outros formatos de dados para análise ou registro na forma de relatório.
 
 Por fim, os relatórios redigidos pela curadoria são armazenados na pasta [`report`](https://github.com/okfn-brasil/queriDO/tree/master/docs/reports).
@@ -33,12 +33,11 @@ Registro da matéria original, sua filtragem e marcação.
 
 ## Repositório QueriDO
 
-No diagrama abaixo são representados todos repositórios, incluindo bancos de dados, repositórios de datasets e de conteúdos.
+No diagrama abaixo são representados todos os repositórios, incluindo bancos de dados, repositórios de datasets e de conteúdos.
  
 &nbsp;&nbsp;&nbsp;[![](assets/repositorios01-380px.png)](https://raw.githubusercontent.com/okfn-brasil/queriDO/master/docs/assets/repositorios01.png)
 
-O "*estatuto*" e os *relatórios* gerados pelas curadorias, assim como os documentos copiados das matérias originais nos diários oficiais, 
-são todos armazenados em repositório [*git*](https://en.wikipedia.org/wiki/Git). Em particular as cópias dos originais recebem 
+O "*estatuto*" e os *relatórios* gerados pelas curadorias, assim como os documentos copiados das matérias originais nos diários oficiais, são todos armazenados em repositório [*git*](https://en.wikipedia.org/wiki/Git). Em particular as cópias dos originais recebem 
 [certificado de integridade para preservação de longo prazo](https://github.com/okfn-brasil/discussOKBr-assets/wiki/Checksums).
 
 A base de dados (SQL) foi estruturada conforme o seguinte molelo de classes (UML): 

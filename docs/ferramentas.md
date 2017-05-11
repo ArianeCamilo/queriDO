@@ -8,7 +8,7 @@ A [Metodologia QueriDO](curadorias.md) depende de algumas ferramentas de softwar
 
 3. Marcando cada uma das matérias, ou seja, transformando o conteúdo "limpo" em conteúdo estruturado e semanticamente marcado. As marcações são o recurso computacional que garante que o significado de cada trecho de texto possa ser compreendido pelos softwares de análise de conteúdo. Por exemplo trechos indicando datas de eventos, valores de contratos, nomes de pessoas, endereços de ruas, códigos de CNPJ, CPF, RG, etc. Já a estrutura, garante o reconhecimento de partes tais como "frente", "corpo", "seção", "subseção", "tabela" e "final" do texto, que dão o contexto de cada marcação.
 
-4. Recuperando trechos desejados e fazendo análise estatística (agregadores SQL) e semnântica (SparQL). Novamente a base de dados (estomos usando PostgreSQL 9.6+ para sua gestão) é o software que faz isso. Os *experts*  da equipe ajudam a gerar relatórios pertinentes.
+4. Recuperando trechos desejados e fazendo análise estatística (agregadores SQL) e semântica (SparQL). Novamente a base de dados (estamos usando PostgreSQL 9.6+ para sua gestão) é o software que faz isso. Os *experts* da equipe ajudam a gerar os relatórios pertinentes.
 
 ## Como usar
 
@@ -19,7 +19,7 @@ A [Metodologia QueriDO](curadorias.md) depende de algumas ferramentas de softwar
 
 ## Arquitetura
 
-A arquitetura de um sistema de software é forma como os blocos básicos e subsistemas foram organizados.
+A arquitetura de um sistema de software é a forma como os blocos básicos e subsistemas foram organizados.
 No QueriDO foi adotada uma arquitetura baseada em serviços (SOA), de backend e frontend. Cada módulo é independnete e auto-contido, e consiste de um conjunto coeso de serviços.
 
 ### Front-end

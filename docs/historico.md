@@ -1,6 +1,6 @@
-O **Projeto `queriDO`** nasceu como  **"Projeto Nosso Querido Diario Oficial"**, com os membros mais antigos da [curadoria1](reports/curadoria001.md), onde são narrados outros detalhes dessa história.
+O **Projeto `queriDO`** nasceu como  **"Projeto Nosso Querido Diário Oficial"**, com os membros mais antigos da [curadoria1](reports/curadoria001.md), onde são narrados outros detalhes dessa história.
 
-O projeto ainda "gratis" e inscipiente. Precisamos de voluntários.
+O projeto ainda "grátis" e inscipiente. Precisamos de voluntários.
 
 ## Primeiros desafios
 
@@ -12,9 +12,9 @@ Generalizar para "qualquer município" e abrir para a participação de outros v
 
 3. Criar metodologia para compensar perdas de estrutura (ex. perda de seções, títulos, identificadores, etc.) ou informação (ex. caso de PDF convertido por OCR).
 
-4. Criar convençes para armazenar aqui no *git* os originais fornecidos, e os textos processados para recuperação de estrutura.
+4. Criar convenções para armazenar aqui no *git* os originais fornecidos, e os textos processados para recuperação de estrutura.
 
-5. Criar convençes para a marcação adicional: extração de endereços (ex. CEP e rua), CPF, CNPJ, RG, nomes de empresa, códigos de contrato, citações de leis, etc.
+5. Criar convenções para a marcação adicional: extração de endereços (ex. CEP e rua), CPF, CNPJ, RG, nomes de empresa, códigos de contrato, citações de leis, etc.
 
 6. Automatizar o que for possível no processo de marcação adicional.
 

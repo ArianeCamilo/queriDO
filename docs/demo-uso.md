@@ -1,7 +1,7 @@
 # Demo
 
 Demonstração de um processo de uso real do QueriDO, 
-disponível em [**okfn-brasil.github.io/queriDO/site**](https://okfn-brasil.github.io/queriDO/site), 
+disponível em [**okfn-brasil.github.io/queriDO**](https://okfn-brasil.github.io/queriDO), 
 baseada no material levantado pela [curadoria-1](reports/curadoria001.md).
 A ilustração abaixo mostra a tela incial do site. 
 
